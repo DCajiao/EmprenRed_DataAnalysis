@@ -36,5 +36,5 @@ cargos_mas_comunes = df.groupBy("nombreNegocio").count().orderBy(col("count").de
 print("Los 5 negocios a los que cuales se le solicitan más vacantes son:")
 cargos_mas_comunes.show(truncate=False)
 
-#Gráficas::
+#Gráficas:
 #guiarse en pruebasgraficas.py

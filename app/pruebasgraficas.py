@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 
 #Análisis 1
 # Datos de ejemplo
-x1 = [1, 2, 3, 4, 5]
-y1 = [2, 4, 6, 8, 2]
+x1 = [2, 4, 6, 8, 10]
+y1 = [1, 2, 3, 5, 12]
 # Crear un gráfico de línea
 plt.plot(x1, y1)
 plt.title('Gráfico de Línea')
@@ -17,7 +17,7 @@ plt.close()  # Cerrar la figura actual
 #Análisis 2
 # Datos de ejemplo
 categorias = ['A', 'B', 'C', 'D', 'E']
-valores = [3, 7, 1, 9, 5]
+valores = [0, 7, 1, 9, 5]
 plt.bar(categorias, valores)
 plt.title('Gráfico de Barras')
 plt.xlabel('Categorías')
