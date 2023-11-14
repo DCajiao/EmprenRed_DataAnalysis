@@ -9,3 +9,11 @@ Contiene el desarrollo Fronted base para desplegar la aplicación en la máquina
 2. Definir en el Script de PySpark que las gráficas de salida deben almacenarse en */var/www/html/gráficas* con los respectivos nombres (*grafica1.png*, *grafica2.png*, *grafica3.png*).
 3. Una vez definidos los tipos de análisis a realizar, incluir en las páginas la interpretación de la gráfica que se está mostrando. (>En esta gráfica podemos ver que...<)
 ---
+---
+# v1:FrontBase + ScriptPySpark + Matplotlib_borrador
+Se añadieron los siguientes items:
+1. Contiene la primera versión del Script de PySpark
+2. Contiene los datos almacenados en un JSON en la carpeta dataset/resultado.JSON (Esto es provisional mientras se desarrolla el despliegue de la app principal en la nube de Azure)
+3. Contiene instruccionnes en el Script EmprenRed_DataAnalysys.py de los aspectos que se deben implementar.
+4. El front ya se encuentra sincronizado con el output del Script pruebasgraficas.py para mostrar las imagenes en la página
+---
