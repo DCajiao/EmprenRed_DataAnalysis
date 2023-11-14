@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    color: #fff;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #200122;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    animation: fadeInUp 2s; /* Agregado prefijo de animación para navegadores */
+}
+
+::-webkit-input-placeholder {
+    color: #eee;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid #F4FAFF;
+    box-shadow: 0 0 50px 0 #989788;
+}
+
+.hero-banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background: linear-gradient(to left, #200122, #6f0000);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%); /* Corregido el nombre de la propiedad clip-path */
+    padding-right: 70px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.welcome-text {
+    font-size: 40px;
+    margin-top: -30px;
+    line-height: 50px;
+}
+
+.hero-para {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.analysis-link {
+    border: none;
+    outline: none;
+    width: 288px;
+    margin-top: 25px;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(to left, #200122, #6f0000);
+    text-align: center;
+    border: 1px solid #F4FAFF;
+    color: white;
+}
+
+.documentation-link {
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+.external-link {
+    color: #0ef;
+    text-decoration: none;
+}
+
+.analysis-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.logo {
+    margin-top: 10px;
+}
+.button {
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px 0;
+    font-size: 25px;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(to left, #200122, #6f0000);
+    text-align: center;
+    border: 1px solid #F4FAFF;
+    color: white;
+}
