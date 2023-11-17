@@ -1,9 +1,21 @@
-# EmprenRed_DataAnalysis
+# Análisis de Datos de Solicitudes de Vacantes
 
-EmprenRed DataAnalysis es una aplicación de análisis de datos. Este repositorio contiene el frontend en HTML y CSS. La aplicación ejecutará localmente un script de PySpark que generará 3 gráficos en formato PNG en un directorio específico. En la página alojada en Apache, se mostrarán estas imágenes de manera más amigable.
+Este repositorio contiene un script en Python para analizar y visualizar datos relacionados con solicitudes de vacantes utilizando PySpark y Pandas. El flujo de trabajo incluye la obtención de datos desde una API, almacenamiento en un archivo JSON, conversión a un DataFrame de Pandas, y carga y análisis de datos utilizando PySpark. Además, se generan gráficos para visualizar los campos de negocio, cargos de expertos y nombres de empresas más comunes.
 
-### ¿Cómo implementar en Ubuntu?
-1. Ejecuta git clone en la ubicación /var/www/html/ dentro de la máquina virtual Ubuntu.
-2. Especifica en el script de PySpark que los gráficos de salida deben almacenarse en /var/www/html/gráficas con los nombres respectivos.
-3. Antes de ejecutar, se debe ejecutar:
-    '''pip install apache2 python3'''
+## Requisitos
+
+Asegúrate de tener las siguientes bibliotecas instaladas antes de ejecutar el código:
+
+- pyspark
+- matplotlib
+- pandas
+- requests
+- json
+
+## Uso del Código
+
+### Configuración de Spark
+
+```python
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName("EmprenRed_DataAnalysis").getOrCreate()
